@@ -7,7 +7,7 @@ function convertNumber(userNumber){
       index = "Beep!";
       numberCount.push(index);
       index = 0;
-      //debugger
+      debugger
     }else if(index === 1){
       index = "Boop!";
       numberCount.push(index);
