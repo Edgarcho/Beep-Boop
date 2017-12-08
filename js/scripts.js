@@ -11,8 +11,8 @@ function convertNumber(userNumber){
 $(document).ready(function(){
   $("form#userInput").submit(function(){
     event.preventDefault();
-    var userNumber = parseInt($("input#numberInput").val()); //convert the string to a number
-    var result = convertNumber(userNumber); // runs the function convertNumber with the value of the user and returns the value as result.
-    $("#result").text(result).show(); //return the result in text
+    var userNumber = parseInt($("input#numberInput").val());
+    var result = convertNumber(userNumber);
+    $("#result").text(result).show(); 
   });
 });
