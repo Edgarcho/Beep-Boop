@@ -1,14 +1,18 @@
 body{
   background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-41596.png);
-  color:red;
+  color:black;
+  font-family: inherit;
+  font-size: 30px;
 }
 .jumbotron{
+  background: url(http://www.freeliquidtemplates.com/free-headers-for-websites/header10.jpg);
   text-align: center;
   color: #101082;
+  font-family: monospace;
 }
 #result{
   display: none;
   font-size: 30px;
-  color: red;
+  color: black;
   text-align: center;
 }
