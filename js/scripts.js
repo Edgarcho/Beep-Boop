@@ -1,6 +1,5 @@
 function convertNumber(userNumber){
   var numberCount = [];
-  //var word = ["Beep!","Boop!","I'm sorry, Dave. I'm afraid I can't do that."] // word[0]= Beep , word[1]= Boop , word[2] = "I'm sorry"
   for (var index = 0; index <= userNumber; index ++){
     debugger
     if(index === 0){
@@ -21,7 +20,6 @@ function convertNumber(userNumber){
     else{
       numberCount.push(index);
     }
-    //numberCount.push(index);
   }
   return numberCount;
 }
