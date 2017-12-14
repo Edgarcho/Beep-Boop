@@ -10,9 +10,13 @@ body{
   color: #101082;
   font-family: monospace;
 }
-#result{
+.result{
   display: none;
+  background-color: green;
   font-size: 30px;
   color: black;
   text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: solid blue 5px;
 }

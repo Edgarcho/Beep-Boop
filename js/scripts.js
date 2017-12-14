@@ -1,28 +1,24 @@
 function convertNumber(userNumber){
-  var numberCount = [];
+  var outcome = [];
   for (var index = 0; index <= userNumber; index ++){
-    debugger
-    if(index === 0){
-      numberCount.push("Beep!");
-    }else if(index === 1){
-      numberCount.push("Boop!");
-    }else if(index % 3 === 0){
-      numberCount.push("I'm sorry, Dave. I'm afraid I can't do that.");
-    }
-    else{
-      numberCount.push(index);
+    outcome.push(index);
+  }
+  for (var i = 1; i <= outcome.length; i++) {
+    if (outcome[i] % 3 === 0) {
+      outcome[i] = ("I'm sorry, Dave. I'm afraid I can't do that.");
     }
   }
-  return numberCount;
+  var outcomeString = outcome.toString().replace(/1/g, "Boop!");
+  var finalOutcome = outcomeString.toString().replace(/0/g, "Beep!")
+  return finalOutcome
 }
-
 
 // user interface logic
 $(document).ready(function(){
-  $("form#userInput").submit(function(){
+  $("form#userInput").submit(function(event){
     event.preventDefault();
     var userNumber = parseInt($("input#numberInput").val());
-    var result = convertNumber(userNumber);
-    $("#result").text(result).show();
+    var respond = convertNumber(userNumber);
+    $(".result").text(respond).show();
   });
 });
